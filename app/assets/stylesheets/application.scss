@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+ 
+$font-family-base: 'Fredericka the Great', cursive;
+$navbar-margin-bottom: 0px;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar .navbar-brand {
+    font-size: 40px;
+}
+
+.navbar a {
+    font-size: 18px;
+}

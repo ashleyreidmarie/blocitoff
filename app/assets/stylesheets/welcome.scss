@@ -1,3 +1,39 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#main-content {
+  
+  .jumbotron {
+    background-image: url(woodfloor.jpg);
+    opacity: 0.6;
+    background-size: cover;
+    min-height: 550px;
+    color: #000;
+  }
+  
+  .jumbotron .container {
+    background-color:rgba(192,192,192,0.5);
+    margin-top: 30px;
+    padding: 15px 20px 20px 15px;
+    border: 15px solid #FDFDFD;
+    -webkit-box-shadow: -2px 17px 28px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 17px 28px -1px rgba(0,0,0,0.75);
+    box-shadow: -2px 17px 28px -1px rgba(0,0,0,0.75);
+  }
+  
+  .jumbotron h1 {
+    font-size: 150px;
+  }
+  
+  .jumbotron p {
+    font-size: 60px;
+  }
+  
+  
+    
+  .you-emphasis {
+   color: yellow;
+  }
+  
+}
+
