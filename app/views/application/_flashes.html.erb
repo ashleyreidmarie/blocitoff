@@ -1,16 +1,16 @@
 <div class="alerts">
   <% if flash[:notice] %>
-    <div class="alert success">
+    <div class="alert alert-success normal-text">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
       <%= flash.now[:notice] %>
     </div>
   <% elsif flash.now[:alert] %>
-    <div class="alert alert-danger">
+    <div class="alert alert-danger normal-text">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
       <%= flash.now[:alert] %>
     </div>
   <% elsif flash[:alert] %>
-    <div class="alert alert-warning">
+    <div class="alert alert-warning normal-text">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
       <%= flash[:alert] %>
     </div>
