@@ -1,3 +1,21 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#main-content {
+  
+  .user-profile .container {
+    margin-top: 50px;
+    min-width: 1300px;
+  }
+  
+  .user-image {
+    border: 25px solid #fff;
+    -webkit-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.52);
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.52);
+    width: 220px;
+  }
+  
+  .glyphicon-user {
+    font-size: 130px;
+    padding: 20px;
+  }
+    
+}

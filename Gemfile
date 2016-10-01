@@ -40,10 +40,10 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '~> 4.0'
   gem 'faker'
   gem 'shoulda'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.0'
   
 end
 
