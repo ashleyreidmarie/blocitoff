@@ -12,5 +12,11 @@ RSpec.describe User, type: :model do
     it "should have name and email attributes" do
       expect(user).to have_attributes(name: user.name, email: user.email)
     end
+    
+    it "should capaitalize the name upon save" do
+      user.name = "tEst"
+      user.save
+      expect(user.name).to eq("Test")
+    end
   end
 end
