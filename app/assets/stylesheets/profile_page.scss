@@ -1,0 +1,108 @@
+#main-content {
+  
+  .user-profile .container {
+    margin-top: 50px;
+    min-width: 1300px;
+    background: #efefef;
+    padding: 0px 0px 50px 0px;
+  }
+  
+  .profile-header {
+    background: #D6EFF6;
+    height: 280px;
+    padding: 20px;
+  }
+  
+  .user-image {
+    border: 25px solid #fff;
+    -webkit-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.52);
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.52);
+    width: 220px;
+  }
+  
+  .glyphicon-user {
+    font-size: 130px;
+    padding: 20px;
+  }
+    
+  #user-credentials {
+    margin-left: 240px;
+  }
+  
+  hr {
+    clear: both;
+    opacity: 0;
+  }
+  
+  .card-group {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .list-card-link, .list-card-link:hover, .list-card-link:focus, .list-card-link:active {
+    text-decoration: none;
+    color: #323232;
+  }
+  
+  .list-card {
+    transition: all .5s ease;
+    width: 20%;
+    height: 300px;
+    display: inline-block;
+    background: #FFF;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    margin: 15px;
+    text-align: left;
+  }
+  
+  .list-card:hover {
+    transition: all .25s ease;
+    -webkit-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.52);
+    -moz-box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.52);
+    box-shadow: 1px 1px 7px 0px rgba(0,0,0,0.52);
+  }
+  
+  .card-header {
+    background: #99D9EA;
+    padding: 6px;
+  }
+  
+  .card-header h3 {
+    color: #000;
+    font-size: 30px;
+  }
+  
+  .card-body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 15px;
+    color: #323232;
+    padding-top: 10px;
+    height: 192px;
+  }
+  
+  .card-body ul {
+    padding-left: 10px;
+  }
+  
+  .card-body h4 {
+    padding-left: 10px;  
+  }
+  
+  .card-body li {
+    padding: 5px;
+    list-style: none;
+  }
+  
+  .card-footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 5px 10px 0px 10px;
+  }
+  
+  .more a{
+    color: #999999;
+  }
+  
+  
+}
