@@ -1,0 +1,8 @@
+<% if @item.valid? %>
+ $('.js-item').prepend("<%= escape_javascript(render(@item)) %>");
+ $('.item-count').html("<%= pluralize(@user.items.count, "Item") %>" )
+ $('.new-item').hide()
+ $('.add-item-link').show()
+<% else %>
+ $('.alerts').prepend("<%= escape_javascript(render partial: 'application/flashes') %>");
+<% end %>

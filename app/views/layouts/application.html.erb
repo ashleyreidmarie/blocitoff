@@ -48,9 +48,11 @@
   </nav>  
 
 <!-- flash messages -->
-  <% if flash[:notice] || flash[:alert] %>
-    <%= render partial: 'application/flashes' %>
-  <% end %>
+  <div class="alerts">
+    <% if flash[:notice] || flash[:alert] %>
+      <%= render partial: 'application/flashes' %>
+    <% end %>
+  </div>
 
 <div id='main-content'>
   <%= yield %>

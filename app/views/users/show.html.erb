@@ -12,27 +12,24 @@
     <hr />
     <div class="card-group">
       <!-- To Do List Card -->
-      <a href="#" class="list-card-link">
-        <div class="list-card">
-          <div class="card-header text-center">
-           <h3>To Do List</h3>
-          </div>
-          <div class="card-body">
-            <ul>
-              <% @items.each do |item| %>
-                <li><%= item.name %></li>
-              <% end %>
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class="pull-left"><%= pluralize(@items.count, "Item") %></div>
-            <div class="pull-right more"><a href="#">Add Item</a></div>
-          </div>
-          <div class="item-form">
-            <%= render 'items/form', item: Item.new %>
-          </div>
+      <div class="list-card">
+        <div class="card-header text-center">
+         <h3>To Do List</h3>
         </div>
-      </a>
+        <div class="card-body">
+          <ul>
+            <div class="js-item">
+              <%= render @user.items %>
+            </div>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="pull-left item-count"><%= pluralize(@items.count, "Item") %></div>
+          <div class="pull-right add-item-link"><%= link_to "Add Item", new_item_path, remote: true %></div>
+        </div>
+        <div class="new-item">
+        </div>
+      </div>
       <!-- End Card -->
     </div>
   </div>

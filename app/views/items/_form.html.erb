@@ -1,9 +1,9 @@
-<%= form_for [item] do |f| %>
- <div class="form-group">
+<%= form_for [item], remote: true do |f| %>
+ <div class="form-group normal-text">
    <%= f.label :name, class: 'sr-only' %>
-   <%= f.text_field :name, class: 'form-control', placeholder: "Enter a new item", :required => 'required' %>
+   <%= f.text_field :name, class: 'form-control', placeholder: "Enter a new item...", :required => 'required' %>
  </div>
  <div class="text-center">
-   <%= f.submit "Add Item", class: 'btn btn-default' %>
+   <%= f.submit "Add Item to List", class: 'btn btn-default' %>
  </div>
 <% end %>
