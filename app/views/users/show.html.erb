@@ -10,180 +10,26 @@
       </div>
     </div>
     <hr />
-    <h2 class="text-center">My Lists</h2>
     <div class="card-group">
       <!-- To Do List Card -->
       <a href="#" class="list-card-link">
         <div class="list-card">
           <div class="card-header text-center">
-           <h3>List Title</h3>
+           <h3>To Do List</h3>
           </div>
           <div class="card-body">
             <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>    
-              <li>List Item 5</li> 
+              <% @items.each do |item| %>
+                <li><%= item.name %></li>
+              <% end %>
             </ul>
           </div>
           <div class="card-footer">
-            <div class="pull-left">6 out of 10</div>
-            <div class="pull-right more"><a href="#">...show more</a></div>
+            <div class="pull-left"><%= pluralize(@items.count, "Item") %></div>
+            <div class="pull-right more"><a href="#">Add Item</a></div>
           </div>
-        </div>
-      </a>
-      <!-- End Card -->
-      <!-- To Do List Card -->
-      <a href="#" class="list-card-link">
-        <div class="list-card">
-          <div class="card-header text-center">
-           <h3>List Title</h3>
-          </div>
-          <div class="card-body">
-            <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>    
-              <li>List Item 5</li> 
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class="pull-left">6 out of 10</div>
-            <div class="pull-right more"><a href="#">...show more</a></div>
-          </div>
-        </div>
-      </a>
-      <!-- End Card -->
-      <!-- To Do List Card -->
-      <a href="#" class="list-card-link">
-        <div class="list-card">
-          <div class="card-header text-center">
-           <h3>List Title</h3>
-          </div>
-          <div class="card-body">
-            <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>    
-              <li>List Item 5</li> 
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class="pull-left">6 out of 10</div>
-            <div class="pull-right more"><a href="#">...show more</a></div>
-          </div>
-        </div>
-      </a>
-      <!-- End Card -->
-      <!-- To Do List Card -->
-      <a href="#" class="list-card-link">
-        <div class="list-card">
-          <div class="card-header text-center">
-           <h3>List Title</h3>
-          </div>
-          <div class="card-body">
-            <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>    
-              <li>List Item 5</li> 
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class="pull-left">6 out of 10</div>
-            <div class="pull-right more"><a href="#">...show more</a></div>
-          </div>
-        </div>
-      </a>
-      <!-- End Card -->
-      <!-- To Do List Card -->
-      <a href="#" class="list-card-link">
-        <div class="list-card">
-          <div class="card-header text-center">
-           <h3>List Title</h3>
-          </div>
-          <div class="card-body">
-            <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>    
-              <li>List Item 5</li> 
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class="pull-left">6 out of 10</div>
-            <div class="pull-right more"><a href="#">...show more</a></div>
-          </div>
-        </div>
-      </a>
-      <!-- End Card -->
-      <!-- To Do List Card -->
-      <a href="#" class="list-card-link">
-        <div class="list-card">
-          <div class="card-header text-center">
-           <h3>List Title</h3>
-          </div>
-          <div class="card-body">
-            <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>    
-              <li>List Item 5</li> 
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class="pull-left">6 out of 10</div>
-            <div class="pull-right more"><a href="#">...show more</a></div>
-          </div>
-        </div>
-      </a>
-      <!-- End Card -->
-      <!-- To Do List Card -->
-      <a href="#" class="list-card-link">
-        <div class="list-card">
-          <div class="card-header text-center">
-           <h3>List Title</h3>
-          </div>
-          <div class="card-body">
-            <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>    
-              <li>List Item 5</li> 
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class="pull-left">6 out of 10</div>
-            <div class="pull-right more"><a href="#">...show more</a></div>
-          </div>
-        </div>
-      </a>
-      <!-- End Card -->
-      <!-- To Do List Card -->
-      <a href="#" class="list-card-link">
-        <div class="list-card">
-          <div class="card-header text-center">
-           <h3>List Title</h3>
-          </div>
-          <div class="card-body">
-            <ul>
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>    
-              <li>List Item 5</li> 
-            </ul>
-          </div>
-          <div class="card-footer">
-            <div class="pull-left">6 out of 10</div>
-            <div class="pull-right more"><a href="#">...show more</a></div>
+          <div class="item-form">
+            <%= render 'items/form', item: Item.new %>
           </div>
         </div>
       </a>
