@@ -27,7 +27,7 @@ RSpec.describe ItemsController, type: :controller do
     
     describe "GET new" do
       it "is successful" do
-        get :new
+        get :new, format: :js
         expect(response).to have_http_status(:success)
       end
     end
@@ -39,6 +39,13 @@ RSpec.describe ItemsController, type: :controller do
       
       it "redirects to user#show view" do
         post :create, format: :js, item: {name: Faker::Educator.course}
+        expect(response).to have_http_status(:success)
+      end
+    end
+    
+    describe "GET cancel" do
+      it "has http status success" do
+        get :cancel, format: :js
         expect(response).to have_http_status(:success)
       end
     end

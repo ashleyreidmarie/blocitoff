@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   before_action :authenticate_user!
+  protect_from_forgery except: [:new, :cancel]
   
   
   def new
@@ -24,6 +25,12 @@ class ItemsController < ApplicationController
     
     respond_to do |format|
      format.html
+     format.js
+    end
+  end
+  
+  def cancel
+    respond_to do |format|
      format.js
     end
   end
