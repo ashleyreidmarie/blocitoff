@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   devise_for :users, module: :users
   get 'welcome/index'
   resources :users, only: [:show]
-  resources :items, only: [:new, :create]
+  resources :items, only: [:new, :create, :destroy]
   resources :items do
     collection do
       get :cancel 

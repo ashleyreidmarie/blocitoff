@@ -1,0 +1,6 @@
+<% if @item.persisted? %>
+ $('.js-item').html("<%= escape_javascript(render(@item)) %>");
+ $('.item-count').html("<%= pluralize(@user.items.count, "Item") %>" );
+<% else %>
+ $('.alerts').prepend("<%= escape_javascript(render partial: 'application/flashes') %>");
+<% end %>

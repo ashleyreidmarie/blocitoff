@@ -1,1 +1,1 @@
-<li><%= item.name %></li>
+<li><%= link_to "", item_path(item.id), class: "col-md-1 glyphicon glyphicon-ok", method: :delete, remote: true %><div><%= item.name %></div></li>

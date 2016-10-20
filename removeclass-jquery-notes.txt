@@ -1,0 +1,14 @@
+<div class='new-item hidden'>
+
+.hidden {
+  display: none;
+}
+
+
+$('.show-new-item').click(function(){
+    $('.new-item').removeClass('hidden')
+})
+
+$('.cancel').click(function(){
+    $('.new-item').addClass('hidden')
+})
