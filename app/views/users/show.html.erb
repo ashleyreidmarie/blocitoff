@@ -25,13 +25,11 @@
         </div>
         <div class="card-footer">
           <div class="pull-left item-count"><%= pluralize(@items.count, "Item") %></div>
-          <div class="pull-right add-item-link"><%= link_to "Add Item", new_item_path, remote: true %></div>
+          <div class="pull-right add-item-link"><%= link_to "Add Item", "#" %></div>
         </div>
-        <% if ItemPolicy.new(@item).new? %>
           <div class="new-item">
-            
+            <%= render 'items/form', item: Item.new %>
           </div>
-        <% end %>
       </div>
       <!-- End Card -->
     </div>
