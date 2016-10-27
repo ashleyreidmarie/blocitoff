@@ -3,5 +3,5 @@
 <% else %>
  $('.alerts').html("<%= escape_javascript(render partial: 'application/flashes') %>");
  $('.js-item').html("<%= escape_javascript(render(@item.user.items)) %>");
- $('.item-count').html("<%= pluralize(@item.user.items.count, "Item") %>" );
+ $('.item-count').html("<%= pluralize(@item.user.items.uncompleted.count, "Item") %>" );
 <% end %>

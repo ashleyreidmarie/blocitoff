@@ -1,1 +1,9 @@
-<li><%= link_to "", item_path(item.id), class: "col-md-1 glyphicon glyphicon-ok", method: :delete, remote: true %><div id="item-<%= item.id %>"><%= item.name %></div></li>
+<li>
+  <div class="col-md-1">
+    <%= link_to "", complete_item_path(id: item.id), class: "glyphicon glyphicon-ok", method: :post, remote: true %>&nbsp;&nbsp;
+    <%= link_to "", item_path(item.id), class: "glyphicon glyphicon-remove", method: :delete, data: { confirm: "This cannot be undone! Are you sure?" }, remote: true %>
+  </div>
+  <div id="item-<%= item.id %>">
+    <%= item.name %> <%= p item.completed %>
+  </div>
+</li>

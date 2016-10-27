@@ -1,0 +1,3 @@
+$( '#item-<%= @item.id %>' ).addClass( "completed-item" );
+$('.item-count').html("<%= pluralize(@item.user.items.uncompleted.count, "Item") %>" );
+$('li:has(#item-<%= @item.id %>) .glyphicon-ok').hide()

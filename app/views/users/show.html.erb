@@ -19,12 +19,12 @@
         <div class="card-body">
           <ul>
             <div class="js-item">
-              <%= render @user.items %>
+              <%= render @uncompleted_items %>
             </div>
           </ul>
         </div>
         <div class="card-footer">
-          <div class="pull-left item-count"><%= pluralize(@items.count, "Item") %></div>
+          <div class="pull-left item-count"><%= pluralize(@uncompleted_items.count, "Item") %></div>
           <div class="pull-right add-item-link"><%= link_to "Add Item", "#" %></div>
         </div>
           <div class="new-item">

@@ -19,13 +19,23 @@ class ItemsController < ApplicationController
     end
   end
   
+  def complete
+    @item = Item.find(params[:id])
+    
+    @item.update_attribute(:completed, true)
+    
+    respond_to do |format|
+     format.js
+    end  
+  end
+  
   def destroy
     @item = Item.find(params[:id])
     
     if @item.destroy
-      flash.now[:notice] = "That item has been successfully completed!"
+      flash.now[:notice] = "That item has been successfully deleted!"
     else
-      flash.now[:alert] = "Something went wrong when completing that item!"
+      flash.now[:alert] = "Something went wrong when deleting that item!"
     end
     
     respond_to do |format|

@@ -1,6 +1,6 @@
 <% if @item.valid? %>
  $('.js-item').prepend("<%= escape_javascript(render(@item)) %>");
- $('.item-count').html("<%= pluralize(@user.items.count, "Item") %>" );
+ $('.item-count').html("<%= pluralize(@user.items.uncompleted.count, "Item") %>" );
  $('.new-item').hide();
  $('.add-item-link').show();
 <% else %>

@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   
   def show
     @user = User.find(params[:id])
-    @items = @user.items
+    @uncompleted_items = @user.items.uncompleted
+    @complete_items = @user.items.completed
   end
 end

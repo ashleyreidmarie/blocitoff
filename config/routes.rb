@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   get 'welcome/index'
   resources :users, only: [:show]
   resources :items, only: [:create, :destroy]
+  resources :items, only: [] do
+    member do
+      post :complete
+    end
+  end
   
 
   # The priority is based upon order of creation: first created -> highest priority.
