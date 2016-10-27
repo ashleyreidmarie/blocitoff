@@ -4,6 +4,7 @@
     <%= link_to "", item_path(item.id), class: "glyphicon glyphicon-remove", method: :delete, data: { confirm: "This cannot be undone! Are you sure?" }, remote: true %>
   </div>
   <div id="item-<%= item.id %>">
-    <%= item.name %>
+    <%= item.name %> 
+    <div class="pull-right time-left"><%= time_left(item) %></div>
   </div>
 </li>
