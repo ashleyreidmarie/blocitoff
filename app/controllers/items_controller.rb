@@ -23,9 +23,9 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
     
     if @item.destroy
-      flash[:notice] = "That item has been successfully completed!"
+      flash.now[:notice] = "That item has been successfully completed!"
     else
-      flash[:alert] = "Something went wrong when completing that item!"
+      flash.now[:alert] = "Something went wrong when completing that item!"
     end
     
     respond_to do |format|
