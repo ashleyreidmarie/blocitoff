@@ -1,7 +1,11 @@
 <% if @item.persisted? %>
- $('.alerts').prepend("<%= escape_javascript(render partial: 'application/flashes') %>");
-<% else %>
- $('.alerts').html("<%= escape_javascript(render partial: 'application/flashes') %>");
- $('.js-item').html("<%= escape_javascript(render(@item.user.items)) %>");
- $('.item-count').html("<%= pluralize(@item.user.items.uncompleted.count, "Item") %>" );
+  $('.alerts').prepend("<%= escape_javascript(render partial: 'application/flashes') %>");
+<% elsif @item.completed == false %>
+  $('.alerts').html("<%= escape_javascript(render partial: 'application/flashes') %>");
+  $('.js-item').html("<%= escape_javascript(render(@item.user.items.uncompleted)) %>");
+  $('.item-count').html("<%= pluralize(@item.user.items.uncompleted.count, "Item") %>" );
+<% elsif @item.completed == true %>
+  $('.alerts').html("<%= escape_javascript(render partial: 'application/flashes') %>");
+  $('.js-completed-items').html("<%= escape_javascript(@item.user.items.completed.each { |item| render partial: 'items/completed_items', locals: {item: item} }) %>");
+  $('.completed-item-count').html("<%= pluralize(@item.user.items.completed.count, "Item") %>" );
 <% end %>

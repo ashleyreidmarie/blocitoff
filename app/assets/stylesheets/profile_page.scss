@@ -3,7 +3,7 @@
   .user-profile .container {
     margin-top: 50px;
     min-width: 1300px;
-    background: #efefef;
+    background: #F7F7F7;
     padding: 0px 0px 50px 0px;
   }
   
@@ -57,7 +57,7 @@
   }
   
   .card-header {
-    background: #99D9EA;
+    background: #7fffbf;
     padding: 6px;
   }
   
@@ -91,6 +91,10 @@
     border-bottom: 1px dashed #e5e5e5;
     padding: 10px 10px 30px 10px;
     margin-bottom: 20px;
+  }
+  
+  .completed-items-card {
+    background: #99D9EA;
   }
   
 }

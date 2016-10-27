@@ -4,6 +4,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @uncompleted_items = @user.items.uncompleted
-    @complete_items = @user.items.completed
+    @completed_items = @user.items.completed
   end
 end
