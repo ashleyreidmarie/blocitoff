@@ -35,6 +35,47 @@
   .you-emphasis {
    color: yellow;
   }
+  
+  .call-to-action {
+  }
+
+  .call-to-action-text {
+    font-size: 50px;
+    padding-top: 10px;
+  }
+  
+  .call-to-action-text a:hover, .call-to-action-text a:active, .call-to-action-text a:focus {
+    text-decoration: none;
+  }
+  
+  #create-account-text {
+    font-size: 75px;
+    padding-top: 50px;
+  }
+
+  #create-account-text a:hover, #create-account-text a:active, #create-account-text a:focus {
+    text-decoration: none;
+  }
+
+  
+  .glyphicon-list {
+    font-size: 175px;
+    color: #72E5BE;
+    padding: 20px;
+    padding: 10px 40px 0px 0px;
+  }
+
+  .glyphicon-check {
+    font-size: 175px;
+    color: #65CC65;
+    padding: 10px 40px 0px 30px;
+  }
+
+  .glyphicon-gift {
+    font-size: 175px;
+    color: #9975B9;
+    padding: 10px 0px 0px 40px;
+  }
 
 }
 

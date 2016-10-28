@@ -4,5 +4,21 @@
     <p>The to do list that keeps <span class="you-emphasis">you</span> in check.</p>
   </div>
 </div>
+<div class="text-center call-to-action">
+  <% if user_signed_in? %>
+    <div class="call-to-action-text">You're One Step Closer to Accomplishing Your Goals... 
+    <%= link_to "Get Going!", user_path(current_user.id) %>
+    </div>
+    <div class="glyphicon glyphicon-list"></div>
+    <div class="glyphicon glyphicon-check"></div>
+    <div class="glyphicon glyphicon-gift"></div>
 
+
+  <% else %>
+    <div class="container">
+      <div class="glyphicon glyphicon-check pull-left"></div>
+      <div id="create-account-text"><%= link_to "Create a Free Account", new_user_registration_path %></div>
+    </div>
+  <% end %>
+</div>
 
